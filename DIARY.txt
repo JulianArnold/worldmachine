@@ -1,4 +1,9 @@
-20151001 - 20151125
+20151001 - 20151130
+
+20151130:
+17:48: updated Git with the partials from previous exercise.  Next up is the new 'Comments' model
+18:00: Learned Active record associations let you easily declare the relationship between 2 models.
+18:10: This is where we begin to work on has_many and belongs_to as model associations.
 
 20151125:
 21:03: Section 6; adding a second model which will handle comments.
