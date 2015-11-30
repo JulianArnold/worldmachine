@@ -1,0 +1,17 @@
+20151001 - 20151125
+
+20151125:
+21:03: Section 6; adding a second model which will handle comments.
+
+20151123:
+17:25: Back in business.  Partials are up next.  Ruby version detection snafu, fix underway.
+18:00: Ruby version fixed, both edit and new files under view/articles now updated nixing dupes.  Next: 'D' in CRUD.
+18:23: Completed CRUD as per section 5.  Now on to 6: Creating a second model.
+
+20151113:
+18:12: Began writing text file.  Working on Worldmachine and I'm adding Updating Articles to the Articles Controller
+18:34: Adding a show link to the edit action.
+18:48: Started here: Using partials to clean up duplication in views
+19:03: Finished here: app/views/articles/_form.html.erb
+22:32: Tinkering with Partials.
+22:55: Stopped here: 5.12 Using partials to clean up duplication in views
