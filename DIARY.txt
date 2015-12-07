@@ -1,4 +1,7 @@
-20151001 - 20151130
+20151001 - 20151207
+
+20151207:
+17:24: beginning to wire up the article show template.
 
 20151130:
 17:48: updated Git with the partials from previous exercise.  Next up is the new 'Comments' model
