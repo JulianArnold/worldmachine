@@ -1,4 +1,11 @@
-20151001 - 20151207
+20151001 - 20151214
+
+20151214:
+18:00: still working on re-factoring.
+18:17: Re-factoring done and two new partials created, one for comments collections and another for the comments form.
+
+20151209:
+18:00: do a little re-factoring
 
 20151207:
 17:24: beginning to wire up the article show template.
