@@ -1,4 +1,10 @@
-20151001 - 20151214
+20151001
+
+20160406:
+Refreshing up on heroku.  Plan to update github and then setup a repo on heroku eu.
+
+20160319:
+updated to ver 4.2.6.
 
 20151214:
 18:00: still working on re-factoring.
