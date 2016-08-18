@@ -2,19 +2,19 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.6'
+gem 'rails', '4.2.7.1'
+gem 'bootstrap-sass'
+gem 'rspec-rails'
+gem 'shoulda-matchers'
+gem 'shoulda-callback-matchers'
+gem 'slim'
+gem 'authlogic'
+gem 'aasm'
+gem 'stripe', '~> 1.44'
+gem 'nokogiri'
+gem 'protected_attributes'
+
 # Use sqlite3 as the database for Active Record
-
-gem 'heroku'
-
-group :development, :test do
-  gem 'sqlite3'
-end
-
-group :production do
-  gem 'pg'
-  gem 'rails_12factor'
-end
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -44,8 +44,16 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'sqlite3'
   gem 'byebug'
+  gem 'rubocop'
+  gem 'annotate'
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+end
+
+group :staging, :production do
+  gem 'pg'
+  gem 'rails_12factor'
 end
 
 group :development do
@@ -55,14 +63,3 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
-gem 'rspec-rails'
-
-gem 'shoulda-matchers'
-
-gem 'shoulda-callback-matchers'
-
-gem 'protected_attributes'
-
-gem 'nokogiri'
-
