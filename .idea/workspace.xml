@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af4a41ce-03ce-4120-a16b-e1069fbd44b3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-    </list>
+    <list default="true" id="af4a41ce-03ce-4120-a16b-e1069fbd44b3" name="Default" comment="" />
     <ignored path="worldmachine.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -544,12 +538,12 @@
       <workItem from="1471801996412" duration="182000" />
       <workItem from="1471985182014" duration="1212000" />
       <workItem from="1472027026042" duration="1568000" />
-      <workItem from="1472120966679" duration="982000" />
+      <workItem from="1472120966679" duration="1807000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21220000" />
+    <option name="totallyTimeSpent" value="22045000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
