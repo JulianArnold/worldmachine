@@ -1,27 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Abouts</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Text</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @abouts.each do |about| %>
-      <tr>
-        <td><%= about.text %></td>
-        <td><%= link_to 'Show', about %></td>
-        <td><%= link_to 'Edit', edit_about_path(about) %></td>
-        <td><%= link_to 'Destroy', about, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
+<h2>About Worldmachine Technology</h2>
+<br>
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus sem, id accumsan felis. Integer venenatis porttitor risus id facilisis. Donec vitae rhoncus odio, vitae ornare urna. Suspendisse porta ex lectus, non luctus magna tempus eget. Nullam at turpis a augue lobortis tristique. Sed aliquam accumsan augue, a dignissim ligula cursus nec. Aliquam augue ligula, consequat nec tortor at, elementum tempus neque. In imperdiet at sem et varius. Praesent tempor ante purus, in congue ex auctor eu. Nunc metus mauris, ullamcorper tempus ante a, vulputate porttitor eros. Duis placerat turpis eu orci bibendum tristique. Nunc sed bibendum eros. Maecenas interdum nisl ipsum, id auctor justo tempus non.
+</p>
 <br>
 
 <%= link_to 'New About', new_about_path %>
