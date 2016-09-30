@@ -1,5 +1,9 @@
 20151001
 
+20160930:
+Created the contact_mailer.rb file with the default hash and the mailto: actions for to: and subject:
+I'm also using Rails 4.2.7.1.
+
 20160406:
 Refreshing up on heroku.  Plan to update github and then setup a repo on heroku eu.  Gem 'heroku' installed but cannot
 seem to deploy on to heroku just yet.
