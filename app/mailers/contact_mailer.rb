@@ -3,7 +3,9 @@ class ContactMailer < ApplicationMailer
 
   def welcome_email(contact)
     @contact = contact
+      email_with_name = %("#{@contact.name}" <#{@contact.email}>)
     @url = 'http://localhost:3000/contacts/new'
-    mail(to: @contact.email, subject: 'Welcome to World Machine Technology!')
+    mail(to: email_with_name, subject: 'Welcome to World Machine Technology!')
+
   end
 end

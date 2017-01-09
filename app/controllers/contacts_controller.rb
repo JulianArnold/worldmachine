@@ -1,4 +1,4 @@
-class ContactsController < ApplicationController
+  class ContactsController < ApplicationController
   before_action :set_contact, only: [:show, :edit, :update, :destroy]
 
   # GET /contacts
@@ -24,13 +24,13 @@ class ContactsController < ApplicationController
   # POST /contacts
   # POST /contacts.json
   def create
-    @contact = Contact.new(params[:contact])
+    @contact = Contact.new(contact_params)
 
     respond_to do |format|
       if @contact.save
-        ContactMailer.welcome_email(@contact).deliver_now
+        ContactMailer.welcome_email(@contact).deliver_later
 
-        format.html { redirect_to @contact, notice: 'Contact was successfully created.' }
+        format.html { redirect_to(@contact, notice: 'Contact was successfully created.') }
         format.json { render json: @contact, status: :created, location: @contact }
       else
         format.html { render action: 'new' }

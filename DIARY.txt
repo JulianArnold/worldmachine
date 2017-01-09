@@ -1,5 +1,30 @@
 20151001
 
+20161221:
+Here: http://guides.rubyonrails.org/action_mailer_basics.html#action-mailer-configuration-for-gmail
+and here: http://stackoverflow.com/questions/23494136/connection-refused-connect2-ruby-on-rails-mail-setup
+
+20161214:
+think I'm making progress..  Need to stop fruzz'ing over the mailer inoperativity and progress building it.s
+
+20161212:
+..back online!  Ooops!  ActiveModel::ForbiddenAttributesError in ContactsController#create
+
+20161210:
+stopped at 2.4 Mailer Views; yay!
+
+20161209:
+stopped at 2.2 Auto encoding header values
+
+20161205:
+Stopped at 2.1.2 Edit the Mailer (yes, doing a quick overview to make sure nothing's missed)  :D
+
+20161201:
+Created a new file for the "to:" mail function.  Will add cc: and bcc:
+
+20161125:
+Trudging through the actionMailer section and have paused here: 2.3.3 Sending Email To Multiple Recipients
+
 20160930:
 Created the contact_mailer.rb file with the default hash and the mailto: actions for to: and subject:
 I'm also using Rails 4.2.7.1.
