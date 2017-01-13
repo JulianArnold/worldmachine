@@ -1,4 +1,6 @@
 class Contact < ActiveRecord::Base
+  attr_accessor :contact
+
 end
 
 
