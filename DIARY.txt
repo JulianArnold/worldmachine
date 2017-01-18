@@ -1,5 +1,11 @@
 20151001
 
+20170117:
+OK on muti-part emails.  Means Rails will automatically send out the text.erb and html.erb versions concurrently.
+
+20170114:
+Got past the url_for conundrum, now for multipart emails section 2.7
+
 20161221:
 Here: http://guides.rubyonrails.org/action_mailer_basics.html#action-mailer-configuration-for-gmail
 and here: http://stackoverflow.com/questions/23494136/connection-refused-connect2-ruby-on-rails-mail-setup
