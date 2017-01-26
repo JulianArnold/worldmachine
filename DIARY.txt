@@ -1,7 +1,13 @@
 20151001
 
+20170123:
+So, would a filter() method have as a parameter, this -> filter([:controllerName])
+
+20170121:
+The app is set up to receive emails although, I probably won't use that initially.  On to callbacks..(section 4)
+
 20170117:
-OK on muti-part emails.  Means Rails will automatically send out the text.erb and html.erb versions concurrently.
+OK on multi-part emails.  Means Rails will automatically send out the text.erb and html.erb versions concurrently.
 
 20170114:
 Got past the url_for conundrum, now for multipart emails section 2.7
