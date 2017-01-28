@@ -1,8 +1,6 @@
 class ContactMailer < ApplicationMailer
   default from: 'julian.arnold123@gmail.com'
-  # after_action  :set_delivery_options,
-  #               :prevent_delivery_to_guests,
-  #               :set_business_headers
+
 
   def welcome_email(contact, email_body)
     @contact = contact
@@ -31,35 +29,4 @@ class ContactMailer < ApplicationMailer
       end
     end
   end
-
-  # def feedback_message(business, contact)
-  #   @business = business
-  #   @contact = contact
-  #   mail
-  # end
-  #
-  # def campaign_message(business, contact)
-  #   @business = business
-  #   @contact = contact
-  # end
-  #
-  # private
-  #
-  # def set_delivery_options
-  #   if @business && @business.has_smtp_settings?
-  #     mail.delivery_method.settings.merge! (@business.smtp_settings)
-  #   end
-  # end
-  #
-  # def prevent_delivery_to_guests
-  #   if @contact && @contact.guest?
-  #     mail.perform_deliveries = false
-  #   end
-  # end
-  #
-  # def set_business_headers
-  #   if @business
-  #     headers["X-SMTPAPI-CATEGORY"] = @business.code
-  #   end
-  # end
 end
