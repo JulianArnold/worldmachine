@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :contacts
   resources :articles
   resources :widgets
+  resources :urls
 
   resources :articles do
     resources :comments

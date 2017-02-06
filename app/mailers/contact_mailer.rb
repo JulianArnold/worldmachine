@@ -1,13 +1,11 @@
 class ContactMailer < ApplicationMailer
-  default from: 'julian.arnold123@gmail.com'
 
-
-  def welcome_email(contact, email_body)
+  def welcome_email(contact)
     @contact = contact
       email_with_name = %("#{@contact.name}" <#{@contact.email}>)
     @url = 'http://localhost:3000/contacts/new'
     mail(to: email_with_name,
-         body: email_body,
+         # body: email_body,
          content_type: "text/html",
          subject: 'Welcome to World Machine Technology!')
   end
