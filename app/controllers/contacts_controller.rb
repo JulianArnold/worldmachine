@@ -28,7 +28,7 @@
 
     respond_to do |format|
       if @contact.save
-        ContactMailer.welcome_email(@contact).deliver_later
+        ContactMailer.welcome_email(@contact).deliver_now
 
         format.html { redirect_to(@contact, notice: 'Contact was successfully created.') }
         format.json { render json: @contact, status: :created, location: @contact }

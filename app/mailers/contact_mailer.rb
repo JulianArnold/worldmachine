@@ -6,7 +6,7 @@ class ContactMailer < ApplicationMailer
     @url = 'http://localhost:3000/contacts/new'
     mail(to: email_with_name,
          # body: email_body,
-         content_type: "text/html",
+         # content_type: "text/html",
          subject: 'Welcome to World Machine Technology!')
   end
 
