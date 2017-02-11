@@ -1,16 +1,12 @@
-<h1>Welcome to World Machine Technology, <%= @contact.name %></h1>
+<h2>Welcome to World Machine Technology, <%= @contact.name %></h2>
 
 <p>
-  Thank you for getting in touch with World Machine Technology, your user name is: <%= @contact.login %>.<br>
+  Thank you for getting in touch with World Machine Technology.  We will respond to your message shortly and in the
+  meantime, please feel free to also call Julian Arnold on 086 804 5027.
 </p>
-
 <p>
-  To log back in, please follow this link: <%= @url %>
+  To return to the site, please follow this link: <%= link_to 'Worldmachine Home', welcome_index_url %>.
 </p>
 <p>
   Thank you for contacting us and do let us know if you have any questions.
-</p>
-
-<p>
-  <%= link_to 'Worldmachine Home', welcome_index_url %>
 </p>
