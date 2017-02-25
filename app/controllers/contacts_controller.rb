@@ -1,5 +1,6 @@
   class ContactsController < ApplicationController
   before_action :set_contact, only: [:show, :edit, :update, :destroy]
+  rescue_from ActiveRecord::RecordNotFound, with: :invalid_contact
 
   # GET /contacts
   # GET /contacts.json
@@ -58,7 +59,7 @@
   def destroy
     @contact.destroy
     respond_to do |format|
-      format.html { redirect_to contacts_url, notice: 'Contact was successfully destroyed.' }
+      format.html { redirect_to contacts_url, notice: 'Contact was successfully deleted.' }
       format.json { head :no_content }
     end
   end
@@ -72,5 +73,10 @@
     # Never trust parameters from the scary internet, only allow the white list through.
     def contact_params
       params.require(:contact).permit(:name, :email, :phone, :subject, :message)
+    end
+
+    def invalid_contact
+      logger.error "Attempt to access invalid contact #{params[:id]}"
+      redirect_to contacts_url, notice:  'Invalid contact.  Please contact World Machine on "julian.arnold123@gmail.com" thanks.'
     end
 end
