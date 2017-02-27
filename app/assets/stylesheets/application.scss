@@ -22,6 +22,7 @@
 .jumbotron {
   background-color: #F4511E;
   color: #FFFFFF;
+  padding: 100px 25px;
 }
 
 .drop-60 {
@@ -37,11 +38,13 @@ body {
   min-height: 90%;
   margin-bottom: 60px;
 }
-@media (min-width: 768px) {
+
+/*@media (min-width: 768px) {
   .container {
     max-width: 70%;
   }
-}
+}*/
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -52,3 +55,23 @@ body {
 .text-muted {
   padding: 1% 0 0 0;
 }
+
+.bg-grey {
+  background-color: #F6F6F6;
+}
+
+.container-fluid {
+  padding: 60px 50px;
+}
+
+.logo {
+  font-size: 200px;
+}
+@media screen and (max-width: 768px) {
+  .col-sm-4 {
+    text-align: center;
+    margin: 25px 0;
+  }
+}
+
+

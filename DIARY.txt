@@ -1,5 +1,8 @@
 20151001
 
+20170225:
+stopped at linking rails with email text box "input" on welcome page
+
 20170123:
 So, would a filter() method have as a parameter, this -> filter([:controllerName])
 
