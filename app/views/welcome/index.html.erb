@@ -44,9 +44,9 @@
 
 <!--Services we offer-->
 <div class="container-fluid text-center">
-  <h2>SERVICES</h2><br>
+  <h2>SERVICES</h2><br/>
   <h4>What we offer</h4>
-  <br>
+  <br/>
   <div class="row">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-pencil logo-small"></span>
@@ -69,7 +69,7 @@
       the void' as you integrate your own, personal blog with other popular outlets.  Be heard, not herded!</p>
     </div>
   </div>
-  <br><br>
+  <br/><br/>
   <div class="row">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-wrench logo-small"></span>
@@ -98,25 +98,30 @@
 
 <!--Portfolio section begins-->
 <div class="container-fluid text-center bg-grey">
-  <h2>PORTFOLIO</h2><br>
+  <h2>PORTFOLIO</h2><br/>
   <h4>The story so far...</h4>
   <div class="row text-center">
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <%= link_to image_tag("Grushenka.jpg"), "http://grushenka.herokuapp.com/" %>
-        <p><strong>Grushenka.com</strong></p>
-        <p>Singer, songwriter online shop with gig guide, sample songs and videos built with Ruby on Rails, HTML, CSS
-          and JavaScript.  A college project for my H. Dip.</p>
+    <%= link_to("http://grushenka.herokuapp.com/", target: '_blank') do %>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <%= image_tag "Grushenka.jpg" %>
+          <p><strong>Grushenka.com</strong></p>
+          <p>Singer, songwriter online shop with gig guide, sample songs and videos built with Ruby on Rails, HTML, CSS
+            and JavaScript.  A college project for my H. Dip.</p>
+        </div>
       </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <%= image_tag "CakeMyDay.jpg" %>
-        <p><strong>CakeMyDay.ie</strong></p>
-        <p>Novelty cake decorator online shop also built with Ruby on Rails, HTML, CSS and JavaScript.  This was a
-        joint college project with my good friend and mentor, Dan Laffan.</p>
+    <% end %>
+    <%= link_to("http://cakemyday.herokuapp.com/", target: '_blank') do %>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <%= image_tag "CakeMyDay.jpg" %>
+          <p><strong>CakeMyDay.ie</strong></p>
+          <p>Novelty cake decorator online shop also built with Ruby on Rails, HTML, CSS and JavaScript.  This was a
+          joint college project with my good friend and mentor, Dan Laffan.</p>
+        </div>
       </div>
-    </div>
+    <% end %>
+    <%= link_to("https://github.com/JulianArnold", target: '_blank') do %>
     <div class="col-sm-4">
       <div class="thumbnail">
         <%= image_tag "GitHub.jpg" %>
@@ -125,13 +130,89 @@
         feel free to follow me and ask any questions about the content.</p>
       </div>
     </div>
+    <% end %>
+  </div><br/>
+  <h2>WHAT OUR CUSTOMERS SAY</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <!--li data-target="#myCarousel" data-slide-to="2"></li-->
+    </ol>
+
+    <!--Wrapper for slides-->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"World Machine are excellent!  I had wanted an online shop and a place to list my next gigs and
+          delighted with the result!"<br/><span style="font-style:normal;">Grushenka Arnold, Grushenka.com</span></h4>
+      </div>
+      <div class="item">
+        <h4>"I love my new website, there's so many features there now, I can focus on making
+        cakes and less time on paperwork!"<br/><span style="font-style:normal;">Geraldine Arnold, Owner,
+        Cake My Day</span></h4>
+      </div>
+    </div>
+    <br/><br/>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
 </div>
-
-
-
-
-
-
-
 <!--Portfolio section ends-->
+
+<!--Pricing section typically goes here but is omitted for the time being-->
+
+<!--Contact section begins-->
+<div class="container-fluid">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Leixlip, Co. Kildare</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +353 (0)86 804 5027</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> julian.arnold123@gmail.com</p>
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br/>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Add Google Maps-->
+<div id="googleMap" style="height:400px;width:100%;"></div>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCm4ANfRPEXGa-UVH-P-tu9c1hetOJDzlc&callback=myMap"></script>
+
+
+
+
+
+
+<!--Contact section ends-->
+
+
+
+
+
+
+
