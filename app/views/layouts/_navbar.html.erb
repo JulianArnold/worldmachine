@@ -1,7 +1,7 @@
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -9,15 +9,19 @@
       </button>
       <a class="navbar-brand" href="/welcome/index"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> World Machine</a>
     </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="/welcome/index"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
-        <li><%= link_to 'About', abouts_url %></li>
-        <li><%= link_to 'Contact', new_contact_path %></li>
-      </ul>
+    <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/welcome/index"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></li>
-        <button type="button" class="btn btn-default navbar-btn btn-success">Press me!</button>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <!--<li class="active"><a href="/welcome/index"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>-->
+        <!--<li><%= link_to 'About', abouts_url %></li>-->
+        <!--<li><%= link_to 'Contact', new_contact_path %></li>-->
+      </ul>
+      <!--<ul class="nav navbar-nav navbar-right">-->
+        <!--<li><a href="/welcome/index"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></li>-->
+        <!--<button type="button" class="btn btn-default navbar-btn btn-success">Press me!</button>-->
       </ul>
     </div><!--/.navbar-collapse -->
   </div>
