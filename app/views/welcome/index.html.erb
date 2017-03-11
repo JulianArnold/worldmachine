@@ -170,7 +170,7 @@
 <!--Pricing section typically goes here but is omitted for the time being-->
 
 <!--Contact section begins-->
-<div class="container-fluid">
+<div id="my-contact-form" class="container-fluid">
   <h2 class="text-center">CONTACT</h2>
   <div class="row">
     <div class="col-sm-5">
@@ -179,22 +179,37 @@
       <p><span class="glyphicon glyphicon-phone"></span> +353 (0)86 804 5027</p>
       <p><span class="glyphicon glyphicon-envelope"></span> julian.arnold123@gmail.com</p>
     </div>
-    <div class="col-sm-7">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+
+    <%= form_for @contact do |f| %>
+      <div class="col-sm-7">
+        <% if flash[:success] %>
+          <div class="alert alert-success" role="alert">
+            <%= flash[:success] %>
+          </div>
+        <% elsif flash[:error] %>
+          <div class="alert alert-danger" role="alert">
+            <%= flash[:error] %>
+          </div>
+      <% end %>
+
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <%= f.text_field :name, class: 'form-control', placeholder: 'Your Name', required: true %>
+          </div>
+          <div class="col-sm-6 form-group">
+            <%= f.email_field :email, class: 'form-control', placeholder: 'Your Email', required: true %>
+          </div>
         </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        <%= f.text_area :message, class: 'form-control', placeholder: 'Comment', rows: 5 %>
+        <br/>
+        <div class="row">
+          <div class="col-sm-12 form-group">
+            <%= f.submit 'Send', class: 'btn btn-default pull-right' %>
+          </div>
         </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br/>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
-        </div>
-      </div>
-    </div>
+    <% end %>
+
   </div>
 </div>
 <!--Add Google Maps-->

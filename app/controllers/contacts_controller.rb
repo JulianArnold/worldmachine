@@ -30,11 +30,14 @@
     respond_to do |format|
       if @contact.save
         ContactMailer.welcome_email(@contact).deliver_now
-
-        format.html { redirect_to @contact, notice: 'Contact was successfully created.' }
+        ContactMailer.new_contact_alert(@contact).deliver_now
+        flash[:success] = 'Thank you.  We will be in touch.'
+        format.html { redirect_to root_url(anchor: 'my-contact-form') }
         format.json { render json: @contact, status: :created, location: @contact }
       else
-        format.html { render action: 'new' }
+        flash[:error] = "Sorry, #{@contact.errors.full_messages.to_sentence}."
+        session[:contact] = @contact.attributes
+        format.html { redirect_to root_url(anchor: 'my-contact-form') }
         format.json { render json: @contact.errors, status: :unprocessable_entity }
       end
     end
