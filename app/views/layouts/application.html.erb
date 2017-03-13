@@ -16,7 +16,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="60">
   <%= render partial: 'layouts/navbar' %>
   <div class="container drop-60">
     <%= yield %>

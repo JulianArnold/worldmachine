@@ -17,7 +17,7 @@
 //= require_tree .
 
 
-$(function myMap() {
+function myMap() {
     var myCenter = new google.maps.LatLng(53.3642285, -6.4905308);
     var mapProp = {
         center:myCenter,
@@ -29,7 +29,7 @@ $(function myMap() {
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
     var marker = new google.maps.Marker({position:myCenter});
     marker.setMap(map);
-});
+};
 
 
 
