@@ -20,7 +20,7 @@
 // navbar
 
 .jumbotron {
-  background-color: #F4511E;
+  background-color: #1DA1F2;
   color: #FFFFFF;
   padding: 100px 25px 50px;
   font-family: Monstserrat, sans-serif;
@@ -39,7 +39,7 @@ html {
 
 body {
   min-height: 90%;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   min-width: 100%;
   font: 400 15px Lato, sans-serif;
   line-height: 1.8;
@@ -72,12 +72,12 @@ body {
 }
 
 .logo-small {
-  color: #F4511E;
+  color: #1DA1F2;
   font-size: 50px;
 }
 
 .logo {
-  color: #F4511E;
+  color: #1DA1F2;
   font-size: 200px;
 }
 @media screen and (max-width: 768px) {
@@ -101,15 +101,15 @@ body {
 
 .carousel-control.right, .carousel-control.left {
   background-image: none;
-  color: #F4511E;
+  color: #1DA1F2;
 }
 
 .carousel-indicators li {
-  border-color: #F4511E;
+  border-color: #1DA1F2;
 }
 
 .carousel-indicators li.active {
-  background-color: #F4511E;
+  background-color: #1DA1F2;
 }
 
 .item h4 {
@@ -125,30 +125,30 @@ body {
 }
 
 #my-about-form {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 #my-services-form {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 #my-portfolio-form {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 #my-contact-form {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 footer .glyphicon {
   font-size: 20px;
   margin-bottom: 20px;
-  color: #F4511E;
+  color: #1DA1F2;
 }
 
 .navbar {
   margin-bottom: 0;
-  background-color: #F4511E;
+  background-color: #1DA1F2;
   z-index: 9999;
   border: 0;
   font-size: 12px !important;
@@ -163,7 +163,7 @@ footer .glyphicon {
 }
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
-  color: #F4511E !important;
+  color: #1DA1F2 !important;
   background-color: #FFFFFF !important;
 }
 
