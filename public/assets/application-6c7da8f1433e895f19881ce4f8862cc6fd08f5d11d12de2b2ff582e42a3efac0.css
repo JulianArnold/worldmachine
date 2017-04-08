@@ -8803,7 +8803,7 @@ button.close {
 }
 /* line 22, /Users/julianarnold/Documents/Rails_projects/worldmachine/app/assets/stylesheets/application.scss */
 .jumbotron {
-  background-color: #F4511E;
+  background-color: #1DA1F2;
   color: #FFFFFF;
   padding: 100px 25px;
 }
@@ -8858,13 +8858,13 @@ body {
 
 /* line 67, /Users/julianarnold/Documents/Rails_projects/worldmachine/app/assets/stylesheets/application.scss */
 .logo-small {
-  color: #F4511E;
+  color: #1DA1F2;
   font-size: 50px;
 }
 
 /* line 72, /Users/julianarnold/Documents/Rails_projects/worldmachine/app/assets/stylesheets/application.scss */
 .logo {
-  color: #F4511E;
+  color: #1DA1F2;
   font-size: 200px;
 }
 

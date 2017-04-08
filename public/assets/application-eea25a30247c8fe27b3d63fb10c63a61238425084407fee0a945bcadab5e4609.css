@@ -8803,7 +8803,7 @@ button.close {
 }
 /* line 22, /Users/julianarnold/Documents/Rails_projects/worldmachine/app/assets/stylesheets/application.scss */
 .jumbotron {
-  background-color: #F4511E;
+  background-color: #1DA1F2;
   color: #FFFFFF;
   padding: 100px 25px;
 }
@@ -8858,13 +8858,13 @@ body {
 
 /* line 67, /Users/julianarnold/Documents/Rails_projects/worldmachine/app/assets/stylesheets/application.scss */
 .logo-small {
-  color: #F4511E;
+  color: #1DA1F2;
   font-size: 50px;
 }
 
 /* line 72, /Users/julianarnold/Documents/Rails_projects/worldmachine/app/assets/stylesheets/application.scss */
 .logo {
-  color: #F4511E;
+  color: #1DA1F2;
   font-size: 200px;
 }
 
@@ -8892,17 +8892,17 @@ body {
 /* line 95, /Users/julianarnold/Documents/Rails_projects/worldmachine/app/assets/stylesheets/application.scss */
 .carousel-control.right, .carousel-control.left {
   background-image: none;
-  color: #F4511E;
+  color: #1DA1F2;
 }
 
 /* line 100, /Users/julianarnold/Documents/Rails_projects/worldmachine/app/assets/stylesheets/application.scss */
 .carousel-indicators li {
-  border-color: #F4511E;
+  border-color: #1DA1F2;
 }
 
 /* line 104, /Users/julianarnold/Documents/Rails_projects/worldmachine/app/assets/stylesheets/application.scss */
 .carousel-indicators li.active {
-  background-color: #F4511E;
+  background-color: #1DA1F2;
 }
 
 /* line 108, /Users/julianarnold/Documents/Rails_projects/worldmachine/app/assets/stylesheets/application.scss */
@@ -8942,7 +8942,7 @@ body {
 /* line 136, /Users/julianarnold/Documents/Rails_projects/worldmachine/app/assets/stylesheets/application.scss */
 .navbar {
   margin-bottom: 0;
-  background-color: #F4511E;
+  background-color: #1DA1F2;
   z-index: 9999;
   border: 0;
   font-size: 12px !important;
@@ -8958,7 +8958,7 @@ body {
 
 /* line 151, /Users/julianarnold/Documents/Rails_projects/worldmachine/app/assets/stylesheets/application.scss */
 .navbar-nav li a:hover, .navbar-nav li.active a {
-  color: #F4511E !important;
+  color: #1DA1F2 !important;
   background-color: #FFFFFF !important;
 }
 

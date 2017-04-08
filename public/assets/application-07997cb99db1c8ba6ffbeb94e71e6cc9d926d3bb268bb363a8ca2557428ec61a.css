@@ -8823,7 +8823,7 @@ html {
 /* line 40, /Users/julianarnold/Documents/Rails_projects/worldmachine/app/assets/stylesheets/application.scss */
 body {
   min-height: 90%;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   min-width: 100%;
   font: 400 15px Lato, sans-serif;
   line-height: 1.8;
@@ -8924,22 +8924,22 @@ body {
 
 /* line 127, /Users/julianarnold/Documents/Rails_projects/worldmachine/app/assets/stylesheets/application.scss */
 #my-about-form {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 /* line 131, /Users/julianarnold/Documents/Rails_projects/worldmachine/app/assets/stylesheets/application.scss */
 #my-services-form {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 /* line 135, /Users/julianarnold/Documents/Rails_projects/worldmachine/app/assets/stylesheets/application.scss */
 #my-portfolio-form {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 /* line 139, /Users/julianarnold/Documents/Rails_projects/worldmachine/app/assets/stylesheets/application.scss */
 #my-contact-form {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 /* line 143, /Users/julianarnold/Documents/Rails_projects/worldmachine/app/assets/stylesheets/application.scss */
