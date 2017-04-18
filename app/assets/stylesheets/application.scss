@@ -26,6 +26,11 @@
   font-family: Monstserrat, sans-serif;
 }
 
+h1 {
+  font-weight: bold;
+  font-size: 200%;
+}
+
 /*.drop-60 {
   margin-top: 60px;
   padding-top: 1%;
@@ -160,6 +165,7 @@ footer .glyphicon {
 
 .navbar li a, .navbar .navbar-brand {
   color: #FFFFFF !important;
+  font-weight: bold;
 }
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
