@@ -14,7 +14,7 @@
 #
 
 class Contact < ActiveRecord::Base
-  validates :name, presence: true
+  # validates :name, presence: true
   validates :email, presence: true,
       format: { with: /\A[a-zA-Z0-9\.\-_+]{2,}@[a-z]{2,}(\.[a-z]{2,}){1,3}\z/ }
 end

@@ -28,7 +28,8 @@
 
 h1 {
   font-weight: bold;
-  font-size: 200%;
+  font-size: 300%;
+  font-style: italic;
 }
 
 /*.drop-60 {
@@ -83,7 +84,7 @@ body {
 
 .logo {
   color: #1DA1F2;
-  font-size: 200px;
+  font-size: 250px;
 }
 @media screen and (max-width: 768px) {
   .col-sm-4 {
@@ -166,6 +167,7 @@ footer .glyphicon {
 .navbar li a, .navbar .navbar-brand {
   color: #FFFFFF !important;
   font-weight: bold;
+  font-style: italic;
 }
 
 .navbar-nav li a:hover, .navbar-nav li.active a {

@@ -2,16 +2,33 @@
 <div class="jumbotron text-center">
   <h1><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> World Machine</h1>
   <p class="lead">We specialise in building quality websites</p>
-  <p>(Currently under construction, please excuse the messiness! :D )</p>
   <br/>
-  <form class="form-inline">
-    <div class="input-group">
-      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-      <div class="input-group-btn">
-        <button type="button" class="btn btn-default">Subscribe</button>
+
+  <%= form_for @contact do |f| %>
+    <div class="row>">
+      <div class="col-sm-offset-4 col-sm-4">
+        <div class="input-group">
+          <% if flash[:success] %>
+            <div class="alert alert-success" role="alert">
+              <%= flash[:success] %>
+            </div>
+          <% elsif flash[:error] %>
+            <div class="alert alert-danger" role="alert">
+              <%= flash[:error] %>
+            </div>
+          <% end %>
+        </div>
+
+        <div class="input-group">
+          <%= f.text_field :email, class: 'form-control', size: '50', placeholder: 'Email Address', required: true %>
+          <div class="input-group-btn">
+            <%= f.submit 'Get in touch', class: 'btn btn-default' %>
+          </div>
+        </div>
       </div>
     </div>
-  </form>
+  <% end %>
+  <br />
 </div>
 <!--Jumbotron section ends-->
 
@@ -21,10 +38,9 @@
     <div class="col-sm-8">
       <h2>About World Machine</h2>
       <h4>World Machine Technology builds tailor-made web sites designed to be easy to use along with a fresh, modern look and feel no matter what devices are used to access it.  Clean, clear and concise providing room to grow and change in the future.</h4>
-
-      <p>Technology.  A word that conjures up images of progress, of moving forward, the future.  It can also mean mystery, interesting but inaccessible new ways of marketing business, of individuals.  A 2016 survey in Ireland, revealed almost 20% of SMEs don't have an online presence.  Oddly, just a similar number of businesses are web sales enabled.  This is why Word Machine came into existence.  To simply try to close that gap by providing a personalised web presence.  Today, social media is the very fabric of people and business tailor-made amongst the crowd.
+      <p>Technology.  A word that conjures up images of progress, of moving forward, the future.  It can also mean mystery, interesting but inaccessible new ways of marketing business, of individuals.  A 2016 survey in Ireland, revealed almost 20% of SMEs don't have an online presence.  Oddly, just a similar number of businesses are web sales enabled.  This is why World Machine came into existence.  To simply try to close that gap by providing a personalised web presence.  Today, social media is the very fabric of people and business tailor-made amongst the crowd.
       </p>
-      <button class="btn btn-default btn-lg">Get in touch</button>
+      <button class="btn btn-default btn-lg"><a href="#my-contact-form">Get in touch</a></button>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-cog logo col-sm-4"></span>
@@ -39,8 +55,8 @@
     </div>
     <div class="col-sm-8">
       <h2>Our values</h2>
-      <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
-      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <h4><strong>MISSION:</strong> Our mission in World Machine is to demystify what having a web presence means.  To deliver clear, easy to use and hopefully fun applications.  To help SMEs and Entrepreneurs step on that first rung of the web, delivering their own powerful message.</h4>
+      <p><strong>VISION:</strong> Our vision is to be partner-in-choice for budding Empire builders.  To help make that expansion from having one page on a social media site, to having their own fully customised website.  Flexibility is key to us as we help build more than just a website for people, but also to help in some small way to building a livelihood for the future.  We also strive to balance an accessible, local feel along with a wider view of what the web can actually offer.  We aim to do what works!</p>
     </div>
   </div>
 </div>
@@ -194,7 +210,7 @@
           <div class="alert alert-danger" role="alert">
             <%= flash[:error] %>
           </div>
-      <% end %>
+       <% end %>
 
         <div class="row">
           <div class="col-sm-6 form-group">
