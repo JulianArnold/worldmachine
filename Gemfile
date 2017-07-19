@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 ruby '2.3.1'
-gem 'rails', '4.2.8' # Updated 20170309
+gem 'rails', '4.2.9' # Updated 20170309
 gem 'bootstrap-sass'
 gem 'rspec-rails'
 gem 'shoulda-matchers'

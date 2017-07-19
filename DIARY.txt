@@ -1,4 +1,5 @@
-20151001
+20170718: "You have included the Google Maps API multiple times on this page. This may cause unexpected errors."
+Much head-scratching going on about this long-time problem.  Sooo close!!  Try this tomorrow... "https://www.google.ie/#q=html+bookmark+page+reload" Look at the 2nd and 5th search results.
 
 20170225:
 stopped at linking rails with email text box "input" on welcome page
