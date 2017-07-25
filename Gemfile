@@ -14,6 +14,7 @@ gem 'aasm'
 gem 'stripe', '~> 1.44'
 gem 'nokogiri'
 gem 'protected_attributes'
+gem 'paperclip'
 
 
 gem 'sass-rails', '~> 5.0'
