@@ -12,7 +12,7 @@ class ContactMailer < ApplicationMailer
 
   def new_contact_alert(contact)
     @contact = contact
-    mail(to: 'julian.arnold123@gmail.com',
+    mail(to: 'julian.arnold@worldmachine.ie',
          subject: 'New contact received from worldmachine.ie')
   end
 

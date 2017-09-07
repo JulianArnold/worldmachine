@@ -80,6 +80,6 @@
 
     def invalid_contact
       logger.error "Attempt to access invalid contact #{params[:id]}"
-      redirect_to contacts_url, notice:  'Invalid contact.  Please contact World Machine on "julian.arnold123@gmail.com" thanks.'
+      redirect_to contacts_url, notice:  'Invalid contact.  Please contact World Machine on "julian.arnold@worldmachine.ie" thanks.'
     end
 end
