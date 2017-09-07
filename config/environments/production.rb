@@ -83,8 +83,8 @@ Rails.application.configure do
       address:              'mail.blacknight.com',
       port:                 587,
       domain:               'worldmachine.ie',
-      user_name:            ENV['EMAIL_USER_NAME'],
-      password:             ENV['EMAIL_PASSWORD'],
+      user_name:            ENV['my dog wears a tu-tu'],
+      password:             ENV['even at the weekend'],
       authentication:       'plain',
-      enable_starttls_auto: true  }
+      enable_starttls_auto: false  }
 end
