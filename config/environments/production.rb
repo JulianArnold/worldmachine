@@ -80,7 +80,7 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-      address:              'smtp1r.cp.blacknight.com',
+      address:              'mail.blacknight.com',
       port:                 587,
       domain:               'worldmachine.ie',
       user_name:            ENV['EMAIL_USER_NAME'],
