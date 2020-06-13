@@ -2,20 +2,21 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-ruby '2.3.1'
-gem 'rails', '4.2.10' # Updated 20170309
+# ruby '2.3.1'
+
+gem 'aasm'
+gem 'authlogic'
 gem 'bootstrap-sass'
 gem 'rspec-rails'
 gem 'shoulda-matchers'
 gem 'shoulda-callback-matchers'
 gem 'slim'
-gem 'authlogic'
-gem 'aasm'
 gem 'stripe', '~> 1.44'
 gem 'nokogiri'
 gem 'protected_attributes'
 gem 'paperclip'
 gem 'premailer-rails'
+gem 'rails', '4.2.10' # Updated 20170309
 
 
 gem 'sass-rails', '~> 5.0'
@@ -36,7 +37,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 
 group :development, :test do
-  gem 'sqlite3'
+  gem 'sqlite3', '~> 1.3.13'
   gem 'byebug'
   gem 'rubocop'
   gem 'annotate'
@@ -44,7 +45,7 @@ group :development, :test do
 end
 
 group :staging, :production do
-  gem 'pg'
+  gem 'pg', '~> 0.11'
   gem 'rails_12factor'
 end
 
