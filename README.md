@@ -1,0 +1,1 @@
+https://medium.com/@tpstar/password-digest-column-in-user-migration-table-871ff9120a5

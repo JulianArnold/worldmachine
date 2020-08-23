@@ -6,6 +6,7 @@ source 'https://rubygems.org'
 
 gem 'aasm'
 gem 'authlogic'
+gem 'bcrypt', '~> 3.1', '>= 3.1.13'
 gem 'bootstrap-sass'
 gem 'rspec-rails'
 gem 'shoulda-matchers'

@@ -120,7 +120,7 @@
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bundle" />
     </content>
-    <orderEntry type="jdk" jdkName="rbenv: 2.3.1" jdkType="RUBY_SDK" />
+    <orderEntry type="jdk" jdkName="rbenv: 2.5.7" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="aasm (v4.12.3, rbenv: 2.5.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionmailer (v4.2.10, rbenv: 2.5.7) [gem]" level="application" />
@@ -136,6 +136,7 @@
     <orderEntry type="library" scope="PROVIDED" name="ast (v2.3.0, rbenv: 2.5.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="authlogic (v3.6.1, rbenv: 2.5.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="autoprefixer-rails (v7.2.5, rbenv: 2.5.7) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bcrypt (v3.1.13, rbenv: 2.5.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="binding_of_caller (v0.8.0, rbenv: 2.5.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bootstrap-sass (v3.3.7, rbenv: 2.5.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.3, rbenv: 2.5.7) [gem]" level="application" />
